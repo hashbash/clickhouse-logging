@@ -1,5 +1,7 @@
 Python logging to clickhouse
-Write your logs direct to Clickhouse
+Write your logs direct to Clickhouse. 
+Logger will send to CH all standard logging fields (like message, level ...) and all fields provided in `extra`.
+By default parameter `input_format_skip_unknown_fields` is enabled.
 
 Based on BufferingHandler, this means that inserts will do only by big batches, not each line.
 
