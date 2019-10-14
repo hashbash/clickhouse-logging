@@ -49,7 +49,7 @@ Traceback (most recent call last):
     res.raise_for_status()
   File "/Users/ed/PycharmProjects/fc/venv/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://fc:bjlyYNkLvotJ2P4UuKO9kW6i7T@fc:8123/?query=insert+into+test.log+format+JSONEachRow&input_format_skip_unknown_fields=1
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://user:password@host:8123/?query=insert+into+test.log+format+JSONEachRow&input_format_skip_unknown_fields=1
 Call stack:
   File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1943, in shutdown
     h.flush()
